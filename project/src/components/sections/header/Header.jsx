@@ -1,13 +1,24 @@
-import { Link } from 'react-router-dom';
+import {AppBar, Container, Toolbar, Typography} from '@mui/material';
+import HeaderMenu from '../../UI/headerMenu/HeaderMenu.jsx';
 
 const Header = () => {
     return (
-        <header>
-            <Link to="/"></Link>
-            <Link to="/сharacters"></Link>
-            <Link to="/"></Link>
-        </header>
-    );
+    <div>
+        <AppBar position="fixed">
+            <Container fixed>
+                <Toolbar>
+                    <HeaderMenu>
+
+                    </HeaderMenu>
+                    <Typography>
+                        WH 40k blog
+                    </Typography>
+
+                </Toolbar>
+            </Container>
+        </AppBar>
+    </div>
+    )
 };
 
 export default Header;
