@@ -1,11 +1,11 @@
 import Footer from "../footer/Footer.jsx";
 import {Outlet} from "react-router-dom";
-import ResponsiveAppBar from "../header/ResponsiveAppBar.jsx";
+import Header from "../header/Header.jsx";
 
 const Layout = () => {
     return (
         <>
-            <ResponsiveAppBar></ResponsiveAppBar>
+            <Header></Header>
             <Outlet></Outlet>
             <Footer></Footer>
         </>
