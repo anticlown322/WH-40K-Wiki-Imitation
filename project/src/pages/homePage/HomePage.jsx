@@ -1,8 +1,12 @@
+import Developers from "../../components/sections/developers/Developers.jsx";
+
+
 const HomePage = () => {
     return (
-        <div>
-
-        </div>
+        <>
+            <Developers>
+            </Developers>
+        </>
     );
 };
 
