@@ -35,9 +35,8 @@ function Header() {
     };
 
     return (
-        <AppBar position="static" style={{backgroundColor: "black"}}>
+        <AppBar position="static" style={{backgroundColor: "darkred"}}>
             <Container maxWidth="xl">
-
                 <Toolbar disableGutters>
 
                     {/*лого*/}

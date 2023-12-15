@@ -2,13 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: WixMadeforDisplay, serif;
+    font-family: Roboto, serif;
 }
 
 .App {
-    width: 800px;
-}
-
-#root {
-    justify-content: center;
+    width: 1440px;
 }

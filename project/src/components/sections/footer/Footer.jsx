@@ -1,29 +1,39 @@
-import { Box, Container, Grid, Typography } from "@mui/material";
+import {Box, Link, Typography} from "@mui/material";
+import Container from "@mui/material/Container";
 
-export const Footer = ()=> {
+
+function Copyright() {
+    return (
+        <Typography variant="body2" color="text.secondary">
+            {'Copyright © '}
+            <Link color="inherit" href="https://mui.com/">
+                WH40K-Wiki imitation
+            </Link>{' '}
+            {new Date().getFullYear()}
+            {'.'}
+        </Typography>
+    );
+}
+
+export const Footer = () => {
     return (
         <Box
+            component="footer"
             sx={{
-                width: "100%",
-                height: "auto",
-                backgroundColor: "gray",
-                paddingTop: "2rem",
-                paddingBottom: "1rem"
+                py: 3,
+                px: 2,
+                mt: 'auto',
+                backgroundColor: (theme) =>
+                    theme.palette.mode === 'light'
+                        ? theme.palette.grey[200]
+                        : theme.palette.grey[800],
             }}
         >
-            <Container maxWidth="lg">
-                <Grid container direction="column" alignItems="center">
-                    <Grid item xs={12}>
-                        <Typography color="black" variant="h5">
-                            React Starter App
-                        </Typography>
-                    </Grid>
-                    <Grid item xs={12}>
-                        <Typography color="textSecondary" variant="subtitle1">
-                            {`${new Date().getFullYear()} | React | Material UI | React Router | addfsdsf | fsdgadfsdf | trtdgagrds`}
-                        </Typography>
-                    </Grid>
-                </Grid>
+            <Container maxWidth="sm">
+                <Typography variant="body1">
+                    Футер надо бы заботать
+                </Typography>
+                <Copyright />
             </Container>
         </Box>
     );
