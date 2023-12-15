@@ -1,12 +1,11 @@
 # О чем данный репозиторий
 Данный репозиторий содержит в себе проект лабораторной работы №2 по РПИ. В readme.md отражена кратко информация о проекте, команде и работе.
 ## Краткая информация
-- :label: Группа: **251004**
-- :label: Номер команды: **8**
-- :label: Номер лабораторной: **№2**
-- :label: Вариант: **8**
-- :family_man_man_boy: Авторы: [**Рычихин С.А.**](https://github.com/BeerManNotAvailable1), [**Иванов А.А.**](https://github.com/AndreyItMe),  [**Карась А.С.**](https://github.com/anticlown322), вот они слева направо:
-
+- :bookmark: Группа: **251004**
+- :bookmark: Номер команды: **8**
+- :bookmark: Номер лабораторной: **№2**
+- :bookmark: Вариант: **8**
+- :family: Авторы: [**Рычихин С.А.**](https://github.com/BeerManNotAvailable1), [**Иванов А.А.**](https://github.com/AndreyItMe),  [**Карась А.С.**](https://github.com/anticlown322), вот они слева направо:
     ![Первое фото команды](/assets/images/team-photo-1.jpg)
     ![Второе фото команды](/assets/images/team-photo-2.jpg)
     ![Третье фото команды](/assets/images/team-photo-3.jpg)
