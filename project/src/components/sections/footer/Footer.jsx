@@ -4,7 +4,7 @@ import Container from "@mui/material/Container";
 
 function Copyright() {
     return (
-        <Typography variant="body2" color="text.secondary">
+        <Typography variant="body2" color="inherit">
             {'Copyright © '}
             <Link color="inherit" href="https://mui.com/">
                 WH40K-Wiki imitation
@@ -23,17 +23,14 @@ export const Footer = () => {
                 py: 3,
                 px: 2,
                 mt: 'auto',
-                backgroundColor: (theme) =>
-                    theme.palette.mode === 'light'
-                        ? theme.palette.grey[200]
-                        : theme.palette.grey[800],
+                backgroundColor: 'brown'
             }}
         >
-            <Container maxWidth="sm">
-                <Typography variant="body1">
+            <Container maxWidth="md" sx={{color: 'white'}}>
+                <Typography variant="body1" color="inherit">
                     Футер надо бы заботать
                 </Typography>
-                <Copyright />
+                <Copyright/>
             </Container>
         </Box>
     );
