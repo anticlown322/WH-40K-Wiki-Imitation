@@ -1,0 +1,28 @@
+.devContainer {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+}
+
+.devOuterStack {
+    text-align: center;
+    max-width: 800px;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: rgba(139, 0, 0, 0.7); /*#0b0b1d - темно синий*/
+   /* background-image: url(https://vignette.wikia.nocookie.net/warhammer40k/images/f/ff/Fon-tzeentch.png/revision/latest?cb=20190713121552&format=original&path-prefix=ru);*/
+}
+
+.devInnerStack {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
+.devBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
