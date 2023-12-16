@@ -1,8 +1,8 @@
 import {Stack, Box, Typography, Avatar, Link} from "@mui/material";
 import classes from './Developers.module.css';
-import avatarAI from '../../../assets/img/developers/AI.jpg';
-import avatarAK from '../../../assets/img/developers/AK.png';
-import avatarSR from '../../../assets/img/developers/SR.png';
+import avatarAI from '/src/assets/img/developers/AI.jpg';
+import avatarAK from '/src/assets/img/developers/AK.png';
+import avatarSR from '/src/assets/img/developers/SR.png';
 
 const Developers = () => {
     return (
