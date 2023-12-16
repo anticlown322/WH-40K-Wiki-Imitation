@@ -1,0 +1,88 @@
+{
+  "characters": [
+    {
+      "name": "Сарех",
+      "nickname": "Безмолвный Царь",
+      "race": "Некрон",
+      "fraction": "Некроны",
+      "belonging": "Сареханская династия",
+      "status": "Жив",
+      "date of birth": "Около 60 млн лет назад",
+      "short-desc": "«Когда Безмолвный Царь увидел, что произошло, то осознал наконец истинную природу К'тан и судьбу, на которую они обрекли всех во имя него»",
+      "full-desc": ["", "", ""],
+      "path-to-picture": ""
+    },
+    {
+      "name": "Альфарий",
+      "nickname": "",
+      "race": "",
+      "fraction": "",
+      "belonging": "",
+      "status": "",
+      "date of birth": "",
+      "short-desc": "",
+      "full-desc": ["", "", ""],
+      "path-to-picture": ""
+    },
+    {
+      "name": "Велизарий Коул",
+      "nickname": "",
+      "race": "",
+      "fraction": "",
+      "belonging": "",
+      "status": "",
+      "date of birth": "",
+      "short-desc": "",
+      "full-desc": ["", "", ""],
+      "path-to-picture": ""
+    },
+    {
+      "name": "Император Человечества",
+      "nickname": "",
+      "race": "",
+      "fraction": "",
+      "belonging": "",
+      "status": "",
+      "date of birth": "",
+      "short-desc": "",
+      "full-desc": ["", "", ""],
+      "path-to-picture": ""
+    },
+    {
+      "name": "Газгкулл",
+      "nickname": "",
+      "race": "",
+      "fraction": "",
+      "belonging": "",
+      "status": "",
+      "date of birth": "",
+      "short-desc": "",
+      "full-desc": ["", "", ""],
+      "path-to-picture": ""
+    },
+    {
+      "name": "Хорус",
+      "nickname": "",
+      "race": "",
+      "fraction": "",
+      "belonging": "",
+      "status": "",
+      "date of birth": "",
+      "short-desc": "",
+      "full-desc": ["", "", ""],
+      "path-to-picture": ""
+    },
+    {
+      "name": "Талдира",
+      "nickname": "",
+      "race": "",
+      "fraction": "",
+      "belonging": "",
+      "status": "",
+      "date of birth": "",
+      "short-desc": "",
+      "full-desc": ["", "", ""],
+      "path-to-picture": ""
+    }
+  ]
+}
