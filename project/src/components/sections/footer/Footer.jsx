@@ -1,7 +1,7 @@
 import {Box, Grid, Link, Typography} from "@mui/material";
 import Container from "@mui/material/Container";
-import "../multigrid/Multigrid.jsx"
-import Multigridfooter from "../multigrid/Multigrid.jsx";
+import "../footerGrid/FooterGrid.jsx"
+import Multigridfooter from "../footerGrid/FooterGrid.jsx";
 
 class arrElem{
     name;
@@ -13,9 +13,9 @@ class arrElem{
 }
 
 const linksContacts = [
-    new arrElem('Наш ВК','https://vk.com/id40558425'),
+    new arrElem('Наш VK','https://vk.com/id40558425'),
     new arrElem('Пожертвования','https://u.9111s.ru/uploads/202204/09/90c5605fc5ac4592b6a6eab6708f91bb.jpg'),
-    new arrElem('Наш Гитхаб','https://github.com/anticlown322/WH-40K-Wiki-Imitation'),
+    new arrElem('Наш GitHub','https://github.com/anticlown322/WH-40K-Wiki-Imitation'),
 ]
 
 const linksSources = [

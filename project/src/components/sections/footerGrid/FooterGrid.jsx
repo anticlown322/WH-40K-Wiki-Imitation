@@ -1,14 +1,14 @@
 import {Grid, Typography} from "@mui/material";
 import Link from '@mui/material/Link';
 
-const Muigridfooter = (Name, Arr) => {
+const FooterGrid = (Name, Arr) => {
     return (
         <Grid item xs={12} sm={6} md={4} lg={3} sx={{
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center'
         }}>
-            <Typography fontSize={"20px"} fontWeight={"Bold"} variant="h4" sx={{margin: "15px"}}>
+            <Typography fontSize={"20px"} fontWeight={"Bold"} variant="h4" color="white" sx={{margin: "15px"}}>
                 {Name}
             </Typography>
 
@@ -22,4 +22,4 @@ const Muigridfooter = (Name, Arr) => {
         </Grid>
     );
 };
-export default Muigridfooter;
+export default FooterGrid;

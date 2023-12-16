@@ -13,7 +13,6 @@ import MenuItem from '@mui/material/MenuItem';
 import classes from './Header.module.css';
 
 const pages = ['Главная', 'О нас', 'Деятель дня', 'Персонажи', 'Сменить язык'];
-const authButtons = ['Войти', 'Регистрация'];
 const settings = ['Профиль', 'Аккаунт', 'Настройки', 'Выйти'];
 
 function Header() {
@@ -65,15 +64,9 @@ function Header() {
                         ))}
                     </Box>
 
-                    <Box id='authBox'>
-                        {authButtons.map((authButton) => (
-                            <Button
-                                key={authButton}
-                                sx={{color: 'white'}}
-                            >
-                                {authButton}
-                            </Button>
-                        ))}
+                    <Box>
+                        <Button>Войти</Button>
+                        <Button>Зарегистрироваться</Button>
                     </Box>
 
                     {/*
