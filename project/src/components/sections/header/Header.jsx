@@ -12,6 +12,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 
 const pages = ['Главная', 'О нас', 'Деятель дня', 'Персонажи', 'Сменить язык'];
+const authButtons = ['Войти', 'Регистрация'];
 const settings = ['Профиль', 'Аккаунт', 'Настройки', 'Выйти'];
 
 function Header() {
@@ -61,8 +62,21 @@ function Header() {
                         ))}
                     </Box>
 
-                    {/*иконка аккаунта с менюшкой*/}
-                    <Box sx={{flexGrow: 0}}>
+                    <Box id = 'authBox'>
+                        {authButtons.map((authButton) =>(
+                            <Button
+                                key = {authButton}
+                                sx={{color: 'white'}}
+                            >
+                                {authButton}
+                            </Button>
+                        ))}
+                    </Box>
+
+                    {/*
+                    выше бокс с кнопками которые при нажатии следует заменить на бокс ниже (иконка аккаунта с менюшкой)
+                    иконка аккаунта с менюшкой*/}
+                    {/*<Box sx={{flexGrow: 0}}>
                         <Tooltip title="Open settings">
                             <IconButton onClick={handleOpenUserMenu} sx={{p: 0}}>
                                 <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg"/>
@@ -90,7 +104,7 @@ function Header() {
                                 </MenuItem>
                             ))}
                         </Menu>
-                    </Box>
+                    </Box> */}
                 </Toolbar>
             </Container>
         </AppBar>
