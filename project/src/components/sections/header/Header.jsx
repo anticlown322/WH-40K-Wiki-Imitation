@@ -10,6 +10,7 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
+import classes from './Header.module.css';
 
 const pages = ['Главная', 'О нас', 'Деятель дня', 'Персонажи', 'Сменить язык'];
 const authButtons = ['Войти', 'Регистрация'];
@@ -31,24 +32,26 @@ function Header() {
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
 
-                    {/*лого*/}
-                    <Typography
-                        variant="h6"
-                        noWrap
-                        component="a"
-                        href="/"
-                        sx={{
-                            mr: 2,
-                            display: {xs: 'none', md: 'flex'},
-                            fontFamily: 'monospace',
-                            fontWeight: 700,
-                            letterSpacing: '.3rem',
-                            color: 'inherit',
-                            textDecoration: 'none',
-                        }}
-                    >
-                        WH40K
-                    </Typography>
+                    {/*лого текстовое*/}
+                    {/*<Typography*/}
+                    {/*    variant="h6"*/}
+                    {/*    noWrap*/}
+                    {/*    component="a"*/}
+                    {/*    href="/"*/}
+                    {/*    sx={{*/}
+                    {/*        mr: 2,*/}
+                    {/*        display: {xs: 'none', md: 'flex'},*/}
+                    {/*        fontFamily: 'monospace',*/}
+                    {/*        fontWeight: 700,*/}
+                    {/*        letterSpacing: '.3rem',*/}
+                    {/*        color: 'inherit',*/}
+                    {/*        textDecoration: 'none',*/}
+                    {/*    }}*/}
+                    {/*>*/}
+                    {/*    WH40K*/}
+                    {/*</Typography>*/}
+                    <img alt="Логотип WH40K" src="src/assets/img/general/Site-logo.webp" className={classes.logo}/>
+
 
                     {/*кнопки для перехода*/}
                     <Box sx={{flexGrow: 1, display: {xs: 'none', md: 'flex'}}}>
@@ -62,10 +65,10 @@ function Header() {
                         ))}
                     </Box>
 
-                    <Box id = 'authBox'>
-                        {authButtons.map((authButton) =>(
+                    <Box id='authBox'>
+                        {authButtons.map((authButton) => (
                             <Button
-                                key = {authButton}
+                                key={authButton}
                                 sx={{color: 'white'}}
                             >
                                 {authButton}

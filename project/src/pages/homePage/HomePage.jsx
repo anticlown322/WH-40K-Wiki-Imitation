@@ -10,7 +10,8 @@ const HomePage = () => {
             flexDirection: 'column',
             alignItems: 'center'
         }}>
-
+            <CharacterOfTheDay></CharacterOfTheDay>
+            <Developers></Developers>
         </Box>
     );
 };
