@@ -1,0 +1,15 @@
+.boxDescription {
+    max-width: 1075px;
+    border-radius: 20px;
+    background-image: url(https://vignette.wikia.nocookie.net/warhammer40k/images/f/ff/Fon-tzeentch.png/revision/latest?cb=20190713121552&format=original&path-prefix=ru);
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 100%;
+    max-width: 600px;
+}
