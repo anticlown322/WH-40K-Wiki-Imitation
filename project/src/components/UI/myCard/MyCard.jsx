@@ -4,22 +4,22 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
 
-export default function MultiActionAreaCard() {
+export default function MultiActionAreaCard(params) {
     return (
         <Card sx={{ minWidth:200, maxWidth: 345, maxHeight:500, margin:2, backgroundColor: '#16132d', borderRadius:3, padding:1}}>
             <CardActionArea>
                 <CardMedia
                     component="img"
                     height="140"
-                    image=""
+                    image="https://img2.joyreactor.cc/pics/post/full/Warhammer-40000-фэндомы-Roboute-Guilliman-Primarchs-6364335.jpeg"
                     alt="Персонаж"
                 />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div" color='white'>
-                        Имя
+                        {(params.name)}
                     </Typography>
                     <Typography variant="body2" color="white" >
-                        Описание
+                        {params.status}
                     </Typography>
                 </CardContent>
             </CardActionArea>
