@@ -1,13 +1,14 @@
 import data from  '../../assets/docs/all-characters.json'
-import React, {useState} from 'react'
+import {useState} from 'react'
+import classes from './ListOfCharactersPage.module.css';
+import CharactersGrid from "../../components/UI/charactersGrid/CharactersGrid.jsx";
 const ListOfCharactersPage = () => {
 /*{data.characters[id]["name"]}*/
-
     let charactersArr;
+    const [value, setValue] = useState('')
 
-const [value, setValue] = useState('')
     return (
-        <div>
+        <div className={classes.divchik}>
             <input
                 type="text"
                 value={value}
@@ -21,6 +22,8 @@ const [value, setValue] = useState('')
                 }
             }
             ></input>
+
+            <CharactersGrid></CharactersGrid>
         </div>
     );
 };

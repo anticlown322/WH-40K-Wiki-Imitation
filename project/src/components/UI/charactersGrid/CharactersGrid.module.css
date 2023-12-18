@@ -1,0 +1,6 @@
+.outerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(139, 0, 0, 0.7);
+}

@@ -11,6 +11,7 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import classes from './Header.module.css';
+import {redirect} from "react-router-dom";
 
 const pages = ['Главная', 'О нас', 'Деятель дня', 'Персонажи', 'Сменить язык'];
 const settings = ['Профиль', 'Аккаунт', 'Настройки', 'Выйти'];
@@ -30,28 +31,7 @@ function Header() {
         <AppBar position="static" style={{backgroundColor: "darkred"}}>
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
-
-                    {/*лого текстовое*/}
-                    {/*<Typography*/}
-                    {/*    variant="h6"*/}
-                    {/*    noWrap*/}
-                    {/*    component="a"*/}
-                    {/*    href="/"*/}
-                    {/*    sx={{*/}
-                    {/*        mr: 2,*/}
-                    {/*        display: {xs: 'none', md: 'flex'},*/}
-                    {/*        fontFamily: 'monospace',*/}
-                    {/*        fontWeight: 700,*/}
-                    {/*        letterSpacing: '.3rem',*/}
-                    {/*        color: 'inherit',*/}
-                    {/*        textDecoration: 'none',*/}
-                    {/*    }}*/}
-                    {/*>*/}
-                    {/*    WH40K*/}
-                    {/*</Typography>*/}
                     <img alt="Логотип WH40K" src="src/assets/img/general/Site-logo.webp" className={classes.logo}/>
-
-
                     {/*кнопки для перехода*/}
                     <Box sx={{flexGrow: 1, display: {xs: 'none', md: 'flex'}}}>
                         {pages.map((page) => (
@@ -65,8 +45,8 @@ function Header() {
                     </Box>
 
                     <Box>
-                        <Button>Войти</Button>
-                        <Button>Зарегистрироваться</Button>
+                        <Button variant="contained" color="error">Войти</Button>
+                        <Button sx={{color:'red'}}>Регистрация</Button>
                     </Box>
 
                     {/*

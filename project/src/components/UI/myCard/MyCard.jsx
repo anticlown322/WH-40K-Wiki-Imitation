@@ -12,7 +12,7 @@ export default function MultiActionAreaCard() {
                     component="img"
                     height="140"
                     image=""
-                    alt="Персонаж дня"
+                    alt="Персонаж"
                 />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div" color='white'>
