@@ -3,7 +3,9 @@ import classes from './characterOfTheDay.module.css';
 import MyCard from '../../UI/myCard/MyCard.jsx'
 import data from  '../../../assets/docs/all-characters.json'
 
-let char = data.characters[Math.ceil(Math.random() * 100) % 7];
+const charId = Math.ceil(Math.random() * 100) % 7;
+const char = data.characters[charId];
+const href = "characters/" + charId
 
 const CharacterOfTheDay = () => {
     return (
@@ -27,6 +29,7 @@ const CharacterOfTheDay = () => {
                 </Box>
             </Box>
             <MyCard
+                href = {href}
                 name = {char.name}
                 status = {char.status}
             ></MyCard>

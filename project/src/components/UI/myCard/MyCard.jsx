@@ -3,8 +3,8 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
-
 export default function MultiActionAreaCard(params) {
+
     return (
         <Card sx={{ minWidth:200, maxWidth: 345, maxHeight:500, margin:2, backgroundColor: '#16132d', borderRadius:3, padding:1}}>
             <CardActionArea>
@@ -24,9 +24,11 @@ export default function MultiActionAreaCard(params) {
                 </CardContent>
             </CardActionArea>
             <CardActions sx={{display: 'flex', justifyContent: 'flex-end'}}>
-                <Button variant="contained" href="#contained-buttons" size="small" sx={{backgroundColor:'red'}} >
+                <Button
+                    variant="contained" href={params.href} size="small" sx={{backgroundColor:'red'}} >
                     Перейти на страницу
-                </Button>
+                </Button
+                    >
             </CardActions>
         </Card>
     );
