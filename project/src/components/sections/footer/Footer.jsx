@@ -1,7 +1,7 @@
 import {Box, Grid, Link, Typography} from "@mui/material";
 import Container from "@mui/material/Container";
-import "../footerGrid/FooterGrid.jsx"
-import Multigridfooter from "../footerGrid/FooterGrid.jsx";
+import "../../UI/footerGrid/FooterGrid.jsx"
+import Multigridfooter from "../../UI/footerGrid/FooterGrid.jsx";
 
 class arrElem{
     name;
