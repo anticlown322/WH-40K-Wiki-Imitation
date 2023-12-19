@@ -17,7 +17,7 @@ import {Link} from "@mui/material";
 const pages = [
         {name : 'Главная', href : '/'},
     {name : 'О нас', href : 'https://github.com/anticlown322/WH-40K-Wiki-Imitation'},
-    {name : 'Деятель дня', href : 'https://www.instagram.com/'},
+    {name : 'Деятель дня', href : '/'},
     {name : 'Персонажи', href : '/characters'}];
 const pagesLinks = ['', '#devs', '#charOfTheDay', 'characters'];
 const settings = ['Профиль', 'Аккаунт', 'Настройки', 'Выйти'];
