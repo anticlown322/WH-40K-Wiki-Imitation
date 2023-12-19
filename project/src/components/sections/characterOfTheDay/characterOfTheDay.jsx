@@ -5,7 +5,7 @@ import data from  '../../../assets/docs/all-characters.json'
 
 const charId = Math.ceil(Math.random() * 100) % 7;
 const char = data.characters[charId];
-const href = char.name;
+const href = charId;
 
 const CharacterOfTheDay = () => {
     return (

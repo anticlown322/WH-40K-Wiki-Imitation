@@ -34,7 +34,7 @@ const CharactersGrid = (charArray) => {
                             </CardContent>
                             <CardActions>
                                 <Button
-                                    variant="contained" href={value.name} size="small" sx={{backgroundColor:'red'}} >
+                                    variant="contained" href={value.id} size="small" sx={{backgroundColor:'red'}} >
                                     Перейти на страницу
                                 </Button>
                             </CardActions>
