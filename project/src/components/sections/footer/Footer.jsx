@@ -54,6 +54,7 @@ export const Footer = () => {
     return (
         <Box
             component="footer"
+            position="static"
             sx={{
                 py: 3,
                 px: 2,
