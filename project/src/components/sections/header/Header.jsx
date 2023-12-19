@@ -13,6 +13,7 @@ import MenuItem from '@mui/material/MenuItem';
 import classes from './Header.module.css';
 import {redirect} from "react-router-dom";
 import {Link} from "@mui/material";
+import { useTranslation } from 'react-i18next';
 
 const pages = [
         {name : 'Главная', href : '/'},
@@ -28,7 +29,11 @@ function Header() {
     const handleOpenUserMenu = (event) => {
         setAnchorElUser(event.currentTarget);
     };
+    const { t, i18n } = useTranslation();
 
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng);
+    };
     const handleCloseUserMenu = () => {
         setAnchorElUser(null);
     };
@@ -54,7 +59,15 @@ function Header() {
 
                     <Box>
                         <Button variant="contained" href="#contained-buttons" size="med" sx={{backgroundColor:'red'}} >Войти</Button>
-                        <Button sx={{color:'white'}}>Регистрация</Button>
+                        <Button sx={{color:'white'}}>{t('registration')}</Button>
+                    </Box>
+                    <Box>
+                        <Button variant="contained" href="#contained-buttons" size="med" sx={{backgroundColor:'red'}} onClick={() => changeLanguage('ru')}>
+                            Russian
+                        </Button>
+                        <Button variant="contained" href="#contained-buttons" size="med" sx={{backgroundColor:'red'}} onClick={() => changeLanguage('en')}>
+                            English
+                        </Button>
                     </Box>
 
                     {/*
