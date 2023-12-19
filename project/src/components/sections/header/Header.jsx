@@ -12,8 +12,10 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import classes from './Header.module.css';
 import {redirect} from "react-router-dom";
+import {Link} from "@mui/material";
 
-const pages = ['Главная', 'О нас', 'Деятель дня', 'Персонажи', 'Сменить язык'];
+const pages = ['Главная', 'О нас', 'Деятель дня', 'Персонажи'];
+const pagesLinks = ['', '#devs', '#charOfTheDay', 'characters'];
 const settings = ['Профиль', 'Аккаунт', 'Настройки', 'Выйти'];
 
 function Header() {
@@ -35,18 +37,20 @@ function Header() {
                     {/*кнопки для перехода*/}
                     <Box sx={{flexGrow: 1, display: {xs: 'none', md: 'flex'}}}>
                         {pages.map((page) => (
-                            <Button
+                            <Link
                                 key={page}
-                                sx={{my: 2, color: 'white', display: 'block'}}
+                                component="button"
+                                variant="body2"
+                                href="https://www.instagram.com/"
                             >
                                 {page}
-                            </Button>
+                            </Link>
                         ))}
                     </Box>
 
                     <Box>
-                        <Button variant="contained" color="error">Войти</Button>
-                        <Button sx={{color:'red'}}>Регистрация</Button>
+                        <Button variant="contained" href="#contained-buttons" size="med" sx={{backgroundColor:'red'}} >Войти</Button>
+                        <Button sx={{color:'white'}}>Регистрация</Button>
                     </Box>
 
                     {/*
