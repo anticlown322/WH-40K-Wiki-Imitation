@@ -4,8 +4,9 @@ import classes from "./CharactersGrid.module.css";
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-const CharactersGrid = (charArray) => {
 
+
+const CharactersGrid = (charArray) => {
     return (
         <Container maxWidth="lg" className={classes.outerContainer}>
             <Typography variant="h1" fontWeight="bold" color="white" align="center">Персонажи</Typography>

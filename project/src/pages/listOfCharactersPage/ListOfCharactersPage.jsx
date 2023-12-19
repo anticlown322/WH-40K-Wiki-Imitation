@@ -6,16 +6,12 @@ import data from  '../../assets/docs/all-characters.json'
 
 
 
-let arr = [];
+
 
 const maxArr = data.characters;
+let arr = [...maxArr];
 function changeArr(props){
-    if(props[0] === undefined){
-        arr = maxArr
-    }else{
-        arr = [...props];
-    }
-
+    arr = [...props];
 }
 
 const ListOfCharactersPage = () => {
