@@ -12,10 +12,7 @@ const CharacterSearch = () => {
         <Container maxWidth="xl">
             <Box className={classes.outerContainer}>
                 <Typography variant="h3" color="white" fontWeight="bold">Поиск по имени</Typography>
-                <TextField
-                    label="Standard warning"
-                    variant="standard"
-                    color="warning"
+                <input
                     value={value}
                     onChange={event => {
                         setValue(event.target.value);
