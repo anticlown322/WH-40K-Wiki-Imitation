@@ -14,7 +14,11 @@ import classes from './Header.module.css';
 import {redirect} from "react-router-dom";
 import {Link} from "@mui/material";
 
-const pages = ['Главная', 'О нас', 'Деятель дня', 'Персонажи'];
+const pages = [
+        {name : 'Главная', href : '/'},
+    {name : 'О нас', href : 'https://github.com/anticlown322/WH-40K-Wiki-Imitation'},
+    {name : 'Деятель дня', href : 'https://www.instagram.com/'},
+    {name : 'Персонажи', href : '/characters'}];
 const pagesLinks = ['', '#devs', '#charOfTheDay', 'characters'];
 const settings = ['Профиль', 'Аккаунт', 'Настройки', 'Выйти'];
 
@@ -37,14 +41,14 @@ function Header() {
                     {/*кнопки для перехода*/}
                     <Box sx={{flexGrow: 1, display: {xs: 'none', md: 'flex'}}}>
                         {pages.map((page) => (
-                            <Link
+                            <Button
                                 key={page}
                                 component="button"
                                 variant="body2"
-                                href="https://www.instagram.com/"
+                                href={page.href}
                             >
-                                {page}
-                            </Link>
+                                {page.name}
+                            </Button>
                         ))}
                     </Box>
 
