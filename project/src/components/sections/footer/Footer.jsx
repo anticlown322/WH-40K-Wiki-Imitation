@@ -59,6 +59,7 @@ export const Footer = () => {
                 px: 2,
                 mt: 'auto',
                 backgroundColor: 'brown',
+                marginTop:'3rem'
             }}
         >
             <Container sx={{
