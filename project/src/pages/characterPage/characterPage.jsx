@@ -1,7 +1,9 @@
 import Container from "@mui/material/Container";
 import {Box, Stack, Typography} from "@mui/material";
 import classes from './characterPage.module.css';
+import data from '../../assets/docs/all-characters.json'
 
+const char = data.characters[document.URL[document.URL.length - 1]];
 const CharacterPage = () => {
     return (
         <Container maxWidth='lg'>
@@ -12,15 +14,17 @@ const CharacterPage = () => {
                     className={classes.innerBox}
                 >
                     <Stack className={classes.innerStack}>
-                        <Typography variant="h2" fontWeight="bold" color="white">Имя</Typography>
-                        <Typography variant="h5" fontWeight="bold" color="white">Короткое описание</Typography>
-                        <Typography variant="h3" fontWeight="bold" color="white" align="center">Биография</Typography>
+                        <Typography variant="h2" fontWeight="bold" color="white">{char.name}</Typography>
+                        <Typography variant="h5" fontWeight="bold" color="white">{char.shortDesc + "\n\t"}</Typography>
+                        {char.fullDesc.map((text) =>(
+                        <Typography key = {text} variant="h3" fontWeight="bold" color="white" align="center">{text}</Typography>
+                        ))}
                         <Typography variant="body1" color="white">Биография</Typography>
                     </Stack>
-                    <img alt="Портрет персонажа" src=""/>
+                    <img alt="Портрет персонажа" src={char.mainImg}/>
                 </Box>
                 <Box className={classes.videoWrapper}>
-                    <iframe src="https://www.youtube.com/embed/kWKqYVKnt9w"
+                    <iframe src={char.pathToVideo}
                             allow="accelerometer; autoplay, picture-in-picture" allowFullScreen=""></iframe>
                 </Box>
 

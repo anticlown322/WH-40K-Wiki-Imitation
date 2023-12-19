@@ -8,6 +8,7 @@ const CharacterSearch = (props) => {
     let charactersArr = [];
     const [value, setValue] = useState('')
 
+
     return (
         <Container maxWidth="xl">
             <Box className={classes.outerContainer}>
