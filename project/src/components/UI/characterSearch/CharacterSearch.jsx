@@ -4,8 +4,8 @@ import {TextField, Typography, Box} from "@mui/material";
 import Container from "@mui/material/Container";
 import classes from "./CharactersSearch.module.css";
 
-const CharacterSearch = () => {
-    let charactersArr;
+const CharacterSearch = (props) => {
+    let charactersArr = [];
     const [value, setValue] = useState('')
 
     return (
@@ -19,8 +19,8 @@ const CharacterSearch = () => {
                         charactersArr = []
                         data.characters.forEach(obj => {
                             if (obj.name.toLowerCase().includes(value.toLowerCase())) charactersArr.push(obj);
+                        props(charactersArr);
                         })
-                        console.log(charactersArr);
                     }
                     }
                 />
