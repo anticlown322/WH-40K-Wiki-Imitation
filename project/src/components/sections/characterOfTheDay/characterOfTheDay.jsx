@@ -15,14 +15,14 @@ const CharacterOfTheDay = () => {
                 display: 'flex',
                 flexDirection: 'column'
             }}>
-                <Typography variant="h3" color="white" margin={1}>Персонаж дня</Typography>
+                <Typography variant="h4" color="white" margin={1} fontWeight="bold">Персонаж дня- {char.name}</Typography>
                 <Box>
                     <Stack>
-                        <Typography variant="body1" color="white" margin={1}>{char.nickname}</Typography>
-                        <Typography variant="body1" color="white" margin={1}>{char.race}</Typography>
-                        <Typography variant="body1" color="white" margin={1}>{char.fraction}</Typography>
+                        <Typography variant="body1" color="white" margin={1}>Альтернативное имя: {char.nickname}</Typography>
+                        <Typography variant="body1" color="white" margin={1}>Раса: {char.race}</Typography>
+                        <Typography variant="body1" color="white" margin={1}>Принадлежность: {char.fraction}</Typography>
                     </Stack>
-                    <Typography variant="h5" color="white" margin={1}>{char.name}</Typography>
+                    <Typography variant="h5" color="white" margin={1} fontWeight="bold">Описание</Typography>
                     <Typography variant="body1" color="white" margin={1} maxWidth='800px'>
                         {char.shortDesc}
                     </Typography>
@@ -32,6 +32,7 @@ const CharacterOfTheDay = () => {
                 href = {href}
                 name = {char.name}
                 status = {char.status}
+                pic = {char.mainImg}
             ></MyCard>
         </Box>
     );

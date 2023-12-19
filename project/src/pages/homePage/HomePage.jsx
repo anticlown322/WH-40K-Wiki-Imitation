@@ -14,8 +14,8 @@ const HomePage = () => {
         }}>
             <HomePageDescription></HomePageDescription>
             <UniverseDescription></UniverseDescription>
-            <CharacterOfTheDay></CharacterOfTheDay>
-            <Developers></Developers>
+            <CharacterOfTheDay id={'charOfTheDay'}></CharacterOfTheDay>
+            <Developers id={'devs'}></Developers>
         </Box>
     );
 };

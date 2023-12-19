@@ -1,30 +1,16 @@
-import data from  '../../assets/docs/all-characters.json'
-import {useState} from 'react'
 import classes from './ListOfCharactersPage.module.css';
 import CharactersGrid from "../../components/UI/charactersGrid/CharactersGrid.jsx";
+import {Box} from "@mui/material";
+import CharacterSearch from "../../components/UI/characterSearch/CharacterSearch.jsx";
+
+
 const ListOfCharactersPage = () => {
-/*{data.characters[id]["name"]}*/
-    let charactersArr;
-    const [value, setValue] = useState('')
-
+/*  {data.characters[id]["name"]} - использование*/
     return (
-        <div className={classes.divchik}>
-            <input
-                type="text"
-                value={value}
-                onChange={event => {
-                    setValue(event.target.value);
-                    charactersArr = []
-                    data.characters.forEach(obj =>{
-                        if(obj.name.toLowerCase().includes(value.toLowerCase())) charactersArr.push(obj);
-                    })
-                    console.log(charactersArr);
-                }
-            }
-            ></input>
-
+        <Box>
+            <CharacterSearch></CharacterSearch>
             <CharactersGrid></CharactersGrid>
-        </div>
+        </Box>
     );
 };
 
