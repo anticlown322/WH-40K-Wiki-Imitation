@@ -3,6 +3,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
+import {t} from "i18next";
 export default function MultiActionAreaCard(params) {
 
     return (
@@ -16,17 +17,18 @@ export default function MultiActionAreaCard(params) {
                 />
                 <CardContent sx={{display: 'flex', flexDirection: 'column', alignItems:'center'}}>
                     <Typography gutterBottom variant="h5" component="div" color='white' fontWeight="bold" textAlign="center">
-                        {(params.name)}
+                        {t(params.name)}
                     </Typography>
                     <Typography variant="body1" color="white" >
-                        Статус: {params.status}
+                        {t("tStatus")}
+                        {t(params.status)}
                     </Typography>
                 </CardContent>
             </CardActionArea>
             <CardActions sx={{display: 'flex', justifyContent: 'center'}}>
                 <Button
                     variant="contained" href={params.href} size="small" sx={{backgroundColor:'red'}} >
-                    Перейти на страницу
+                    {t("tGoToThePage")}
                 </Button
                     >
             </CardActions>

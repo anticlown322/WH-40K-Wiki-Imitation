@@ -4,11 +4,14 @@ import classes from "./CharactersGrid.module.css";
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
+import {t} from "i18next";
 const CharactersGrid = (charArray) => {
 
     return (
         <Container maxWidth="lg" className={classes.outerContainer}>
-            <Typography variant="h1" fontWeight="bold" color="white" align="center">Персонажи</Typography>
+            <Typography variant="h1" fontWeight="bold" color="white" align="center">
+                {t('tCharacters')}
+            </Typography>
             <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
                 {charArray.map((value) => (
                     <Grid item key={value} xs={12} sm={6} md={4}>
@@ -34,7 +37,7 @@ const CharactersGrid = (charArray) => {
                             <CardActions>
                                 <Button
                                     variant="contained" href={value.name} size="small" sx={{backgroundColor:'red'}} >
-                                    Перейти на страницу
+                                    {t('tGoToThePage')}
                                 </Button>
                             </CardActions>
                         </Card>

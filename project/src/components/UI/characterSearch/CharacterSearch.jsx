@@ -3,6 +3,7 @@ import data from "../../../assets/docs/all-characters.json";
 import {TextField, Typography, Box} from "@mui/material";
 import Container from "@mui/material/Container";
 import classes from "./CharactersSearch.module.css";
+import {t} from "i18next";
 
 const CharacterSearch = (props) => {
     let charactersArr = [];
@@ -11,7 +12,9 @@ const CharacterSearch = (props) => {
     return (
         <Container maxWidth="xl">
             <Box className={classes.outerContainer}>
-                <Typography variant="h3" color="white" fontWeight="bold">Поиск по имени</Typography>
+                <Typography variant="h3" color="white" fontWeight="bold">
+                    {t('tSearchByName')}
+                </Typography>
                 <input
                     value={value}
                     onChange={event => {
