@@ -14,9 +14,11 @@ import classes from './Header.module.css';
 import {redirect} from "react-router-dom";
 import {Link} from "@mui/material";
 import { useTranslation } from 'react-i18next';
+import { withTranslation } from 'react-i18next';
+import {t} from "i18next";
 
 const pages = [
-        {name : 'Главная', href : '/'},
+    {name : "main", href : '/'},
     {name : 'О нас', href : 'https://github.com/anticlown322/WH-40K-Wiki-Imitation'},
     {name : 'Деятель дня', href : '/'},
     {name : 'Персонажи', href : '/characters'}];
@@ -52,21 +54,21 @@ function Header() {
                                 variant="body2"
                                 href={page.href}
                             >
-                                {page.name}
+                                {t(page.name)}
                             </Button>
                         ))}
                     </Box>
 
                     <Box>
-                        <Button variant="contained" href="#contained-buttons" size="med" sx={{backgroundColor:'red'}} >Войти</Button>
-                        <Button sx={{color:'white'}}>{t('registration')}</Button>
+                        <Button variant="contained" href="#contained-buttons" size="med" sx={{backgroundColor:'red'}} >{t('tEnter')}</Button>
+                        <Button sx={{color:'white'}}>{t('tRegistration')}</Button>
                     </Box>
                     <Box>
                         <Button variant="contained" href="#contained-buttons" size="med" sx={{backgroundColor:'red'}} onClick={() => changeLanguage('ru')}>
-                            Russian
+                            {t('tRussian')}
                         </Button>
                         <Button variant="contained" href="#contained-buttons" size="med" sx={{backgroundColor:'red'}} onClick={() => changeLanguage('en')}>
-                            English
+                            {t('tEnglish')}
                         </Button>
                     </Box>
 
