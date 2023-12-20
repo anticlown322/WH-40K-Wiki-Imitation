@@ -1,41 +1,67 @@
 {
-  "header": {
-    "home": "Home",
-    "aboutUs": "About Us",
-    "charOfTheDay": "Character of the day",
-    "characters": "All characters",
-    "signIn": "Sign In",
-    "signUp": "Sign Up",
-    "language": "Language"
-  },
-  "footer": {
-    "contactUs": "Contact Us",
-    "contactUsLinks": {
-      "vk": "VK",
-      "donations": "Donations",
-      "gh": "GitHub"
-    },
-    "sources": "Sources",
-    "overview": "Overview",
-    "overviewLinks": {
-      "fandom": "What is Fandom?",
-      "terms": "Terms of use",
-      "aboutUs": "About Us"
-    },
-    "community": "Community",
-    "communityLinks": {
-      "wiki": "Community Wiki",
-      "support": "Contact support",
-      "help": "Help"
-    }
-  },
-  "homePage": {
+  "tRegistration": "Registration",
+  "tEnter": "Enter",
+  "tRussian": "Russian",
+  "tEnglish": "English",
+  "tMain": "Main",
+  "tNickname": "Nick name: ",
+  "tRace": "Race: ",
+  "tFraction": "Fraction: ",
+  "tShortDesc": "Short description:",
+  "tCharacterDay": "The character of the day - ",
 
-  },
-  "charList": {
+  "tDevelopers": "Developers",
+  "tWorker": "Worker",
+  "tProfileOnGitHub": "Profile on GitHub",
+  "tAndreyGoldfish": "Andrey Goldfish",
+  "tSemyonRychikhin": "Semyon Rychikhin",
+  "tAndreyIvanov": "Andrey Ivanov",
 
-  },
-  "charPage": {
+  "tWelcome": "Welcome to the Warhammer 40,000 Wiki.",
+  "tWelcomeYouOnWiki": "Welcome to the Russian-speaking Warhammer 40k Wiki community. Our main task is high—quality, \n clear and colorful presentation of information about the Warhammer 40k universe. Join us and \n contribute to the replenishment of the database information!",
 
+  "tInDarkness": "IN THE GLOOMY DARKNESS OF THE DISTANT FUTURE, THERE IS ONLY WAR…",
+  "41StMillennium": "This is the 41st millennium. For more than a hundred centuries, the Emperor has been sitting motionless on the Golden Throne of Terra. He is the Lord of Mankind and rules over a million worlds thanks to the power of his innumerable armies. He's rotting a half-corpse whose invisible torments are prolonged by mysterious devices of the Dark Era of Technology. He — The decaying ruler of the Imperium, to whom a thousand souls are sacrificed every day. On blood and flesh The Imperium itself is human.",
+  "tEvenInItsCurrentState": "Even in his current state, the Emperor continues his eternal vigilance. Mighty fleets traverse the demon-infested miasma of the warp, the only path between distant stars, their path illuminated by the light of the Astronomicon, the psychic manifestation of the Emperor's will. Vast armies are fighting in His name on countless worlds. The greatest among His soldiers are the Adeptus Astartes, space marines, super warriors created with the help of bioengineering. Their brothers in arms are the regiments of the Imperial Guard and countless planetary defense forces, the all—seeing Inquisition and the tech-priests of the Adeptus Mechanicus. Only a few are named here. But even all this multitude is barely enough to contain the ubiquitous threats to humanity: aliens, heretics, mutants and much, much worse things.",
+
+  "tToBeHumanInSuchTimes": "To be human in such times is to be one of countless billions. To live under the most cruel and\n                the bloodiest regime imaginable. And here is a story about those times. If you dare, you will\n                you will be able to feel what life is like in the universe in this dark and terrible era, where you will not find peace\n                or hope. If you want to go on this adventure, then tune in to it. Forget about the power\n                technology, science and banal humanity. Forget about the predicted progress and mutual understanding,\n                for there is no peace among the stars, but only an eternity of carnage and slaughter amid the laughter of bloodthirsty gods.",
+  "tHoweverUniverseHuge": "However, the universe is huge, and no matter what happens, no one will notice your disappearance...",
+
+  "tSearchByName": "Search by name",
+  "tCharacters": "Characters",
+  "tGoToThePage": "Go to the page",
+
+  "Император Человечества": "The Emperor of Mankind",
+  "Сарех": "Sareh",
+  "Константин Вальдор": "Konstantin Valdor",
+  "Робаут Жиллиман": "Robout Guilliman",
+  "Газгкулл Маг Урук Трака": "Gazkull Mag Uruk Truck",
+  "Велизарий Коул": "Belisarius Cole",
+  "Хорус Луперкаль": "Horus Lupercal",
+  "tStatus": "Status: ",
+  "Жив": "Alive",
+  "Неизвестно": "IsUnknown",
+
+  "СВЯЗЬ С НАМИ": "CONTACT US",
+  "ИСТОЧНИКИ": "SOURCES",
+  "ОБЗОР": "REVIEW",
+  "СООБЩЕСТВО": "COMMUNITY",
+  "Наш VK": "Our VK",
+  "Пожертвования": "Donations",
+  "Наш GitHub": "Our GitHub",
+  "Что такое фэндом?": "What is a fandom?",
+  "Условия использования": "Terms of use",
+  "О нас": "About us",
+  "Вики сообщества": "Wiki community",
+  "Поддержка": "Support",
+  "Справка": "Reference",
+
+  "main": "Main",
+  "Деятель дня": "The figure of the day",
+  "Персонажи": "Characters",
+
+  "description": {
+    "part1": "To get started, edit <1>src/App.js</1> and save to reload.",
+    "part2": "Switch language between english and german using buttons above."
   }
 }

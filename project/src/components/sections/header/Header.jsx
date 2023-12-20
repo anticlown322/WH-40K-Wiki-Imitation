@@ -13,9 +13,19 @@ import MenuItem from '@mui/material/MenuItem';
 import classes from './Header.module.css';
 import {redirect} from "react-router-dom";
 import {Link} from "@mui/material";
-import {useTranslation} from 'react-i18next';
+import { useTranslation } from 'react-i18next';
+import { withTranslation } from 'react-i18next';
+import {t} from "i18next";
 import data from "../../../assets/docs/all-characters.json"
 import LangDropDown from "../../UI/languageDropDown/LanguageDropDown.jsx";
+
+const pages = [
+    {name : "main", href : '/'},
+    {name : 'О нас', href : 'https://github.com/anticlown322/WH-40K-Wiki-Imitation'},
+    {name : 'Деятель дня', href : '/'},
+    {name : 'Персонажи', href : '/characters'}];
+// const pagesLinks = ['', '#devs', '#charOfTheDay', 'characters'];
+const settings = ['Профиль', 'Аккаунт', 'Настройки', 'Выйти'];
 
 function Header() {
     const [anchorElUser, setAnchorElUser] = React.useState(null);
@@ -23,19 +33,14 @@ function Header() {
     const handleOpenUserMenu = (event) => {
         setAnchorElUser(event.currentTarget);
     };
-    const {t, i18n} = useTranslation();
+    const { t, i18n } = useTranslation();
 
-
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng);
+    };
     const handleCloseUserMenu = () => {
         setAnchorElUser(null);
     };
-
-    const pages = [
-        {name: t('header.home'), href: '/'},
-        {name: t('header.aboutUs'), href: 'https://github.com/anticlown322/WH-40K-Wiki-Imitation'},
-        {name: t('header.charOfTheDay'), href: data.characterOfTheDay},
-        {name: t('header.characters'), href: '/characters'}];
-    const settings = ['Профиль', 'Аккаунт', 'Настройки', 'Выйти'];
 
     return (
         <AppBar position="static" style={{backgroundColor: "darkred"}}>
@@ -51,7 +56,7 @@ function Header() {
                                 variant="body2"
                                 href={page.href}
                             >
-                                {page.name}
+                                {t(page.name)}
                             </Button>
                         ))}
                     </Box>
