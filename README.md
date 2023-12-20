@@ -15,7 +15,7 @@
 Выбранная вселенная: **Warhammer 40,000**
 
 - :file_folder: Папка с [проектом](Project/)
-- :clapper: Публикация на [Github Pages](https://anticlown322.github.io/WH-40K-Wiki-Imitation/)
+- :clapper: Публикация на [Netlify]([https://anticlown322.github.io/WH-40K-Wiki-Imitation/](https://magenta-dusk-6e31dc.netlify.app/))
 ### Список для оценивания:
 :spiral_calendar: Дата сдачи: 20.12.2023 / Дедлайн: 20.12.2023 (в последний вагон)
 
