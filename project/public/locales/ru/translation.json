@@ -1,7 +1,41 @@
 {
-  "registration": "Регистрация",
-  "description": {
-    "part1": "To get started, edit <1>src/App.js</1> and save to reload.",
-    "part2": "Switch language between english and german using buttons above."
+  "header": {
+    "home": "Главная",
+    "aboutUs": "О нас",
+    "charOfTheDay": "Персонаж дня",
+    "characters": "Все персонажи",
+    "signIn": "Войти",
+    "signUp": "Регистрация",
+    "language": "Язык"
+  },
+  "footer": {
+    "contactUs": "Связаться с нами",
+    "contactUsLinks": {
+      "vk": "Наш VK",
+      "donations": "Пожертвования",
+      "gh": "Наш GitHub"
+    },
+    "sources": "Источники",
+    "overview": "Обзор",
+    "overviewLinks": {
+      "fandom": "Что такое Fandom?",
+      "terms": "Условия пользования",
+      "aboutUs": "О нас"
+    },
+    "community": "Сообщества",
+    "communityLinks": {
+      "wiki": "Вики сообщества",
+      "support": "Связаться с поддержкой",
+      "help": "Справка"
+    }
+  },
+  "homePage": {
+
+  },
+  "charList": {
+
+  },
+  "charPage": {
+
   }
 }
