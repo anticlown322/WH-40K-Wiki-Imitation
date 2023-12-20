@@ -5,7 +5,7 @@ import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
 import {t} from "i18next";
 export default function MultiActionAreaCard(params) {
-
+    {console.log(params.href)}
     return (
         <Card sx={{ minWidth:200, maxWidth: 345, maxHeight:500, margin:2, backgroundColor: '#16132d', borderRadius:3, border:'2px solid white', padding:1.5}}>
             <CardActionArea>

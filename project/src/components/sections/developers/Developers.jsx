@@ -27,22 +27,22 @@ const Developers = () => {
                     <Box className={classes.devBox}>
                         <Avatar alt="Семен Рычихин" src={avatarSR} variant="rounded"
                                 sx={{backgroundColor: 'primary.dark', width: 96, height: 96, borderRadius: 4, transition: '0.5s', '&:hover': {transform: 'scale(1.2)'}}}/>
-                        <Typography variant="h6" color="white" margin={1}>{t('tSemyonRychikhin')}</Typography>
+                        <Typography variant="h6" color="white" margin={1}>Семен Рычихин</Typography>
                         <Typography color="white">
                             {t('tWorker')}
                         </Typography>
-                        <Link href="https://github.com/AndreyItMe" underline="none" target="_blank" color="lightBlue"
-                              sx={{transition: '0.3s', '&:hover': {color: 'lightGreen'}}}>{t('tProfileOnGitHub')}</Link>
+                        <Link href="https://github.com/BeerManNotAvailable1 " underline="none" target="_blank" color="lightBlue"
+                              sx={{transition: '0.3s', '&:hover': {color: 'lightGreen'}}}>Профиль на GitHub</Link>
                     </Box>
                     <Box className={classes.devBox}>
                         <Avatar alt="Андрей Иванов" src={avatarAI} variant="rounded"
                                 sx={{backgroundColor: 'primary.dark', width: 96, height: 96, borderRadius: 4, transition: '0.5s', '&:hover': {transform: 'scale(1.2)'}}}/>
-                        <Typography variant="h6" color="white" margin={1}>{t('tAndreyIvanov')}</Typography>
+                        <Typography variant="h6" color="white" margin={1}>Андрей Иванов</Typography>
                         <Typography color="white">
                             {t('tWorker')}
                         </Typography>
-                        <Link href="https://github.com/BeerManNotAvailable1" underline="none" target="_blank" color="lightBlue"
-                              sx={{transition: '0.3s', '&:hover': {color: 'lightGreen'}}}>{t('tProfileOnGitHub')}</Link>
+                        <Link href="https://github.com/AndreyItMe" underline="none" target="_blank" color="lightBlue"
+                              sx={{transition: '0.3s', '&:hover': {color: 'lightGreen'}}}>Профиль на GitHub</Link>
                     </Box>
                 </Stack>
             </Stack>

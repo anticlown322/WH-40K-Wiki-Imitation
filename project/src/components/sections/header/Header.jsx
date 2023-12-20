@@ -16,13 +16,15 @@ import {Link} from "@mui/material";
 import { useTranslation } from 'react-i18next';
 import { withTranslation } from 'react-i18next';
 import {t} from "i18next";
+import data from "../../../assets/docs/all-characters.json"
+import LangDropDown from "../../UI/languageDropDown/LanguageDropDown.jsx";
 
 const pages = [
     {name : "main", href : '/'},
     {name : 'О нас', href : 'https://github.com/anticlown322/WH-40K-Wiki-Imitation'},
     {name : 'Деятель дня', href : '/'},
     {name : 'Персонажи', href : '/characters'}];
-const pagesLinks = ['', '#devs', '#charOfTheDay', 'characters'];
+// const pagesLinks = ['', '#devs', '#charOfTheDay', 'characters'];
 const settings = ['Профиль', 'Аккаунт', 'Настройки', 'Выйти'];
 
 function Header() {
@@ -59,18 +61,14 @@ function Header() {
                         ))}
                     </Box>
 
+                    {/*
                     <Box>
-                        <Button variant="contained" href="#contained-buttons" size="med" sx={{backgroundColor:'red'}} >{t('tEnter')}</Button>
-                        <Button sx={{color:'white'}}>{t('tRegistration')}</Button>
+                        <Button variant="contained" size="med" sx={{backgroundColor: 'red'}}>{t('header.signIn')}</Button>
+                        <Button sx={{color: 'white'}}>{t('header.signUp')}</Button>
                     </Box>
-                    <Box>
-                        <Button variant="contained" href="#contained-buttons" size="med" sx={{backgroundColor:'red'}} onClick={() => changeLanguage('ru')}>
-                            {t('tRussian')}
-                        </Button>
-                        <Button variant="contained" href="#contained-buttons" size="med" sx={{backgroundColor:'red'}} onClick={() => changeLanguage('en')}>
-                            {t('tEnglish')}
-                        </Button>
-                    </Box>
+                    */}
+
+                    <LangDropDown></LangDropDown>
 
                     {/*
                     выше бокс с кнопками которые при нажатии следует заменить на бокс ниже (иконка аккаунта с менюшкой)

@@ -4,9 +4,10 @@ import MyCard from '../../UI/myCard/MyCard.jsx'
 import data from  '../../../assets/docs/all-characters.json'
 import i18n, {t} from "i18next";
 
-const charId = Math.ceil(Math.random() * 100) % 7;
+const charId = Math.ceil(Math.random() * 100) % 6 +1;
+data.characterOfTheDay = charId;
 const char = data.characters[charId];
-const href = char.name;
+const href = charId;
 
 const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
