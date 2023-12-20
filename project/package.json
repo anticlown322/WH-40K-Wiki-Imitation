@@ -1,4 +1,5 @@
 {
+  "homepage": "https://github.com/anticlown322/WH-40K-Wiki-Imitation",
   "name": "project",
   "private": true,
   "version": "0.0.0",
@@ -38,7 +39,12 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
+    "gh-pages": "^6.1.0",
     "sass": "^1.69.5",
     "vite": "^5.0.8"
-  }
+  },
+  "scripts": {
+  "predeploy": "npm run build",
+   "deploy": "gh-pages -d build"
+  },
 }
