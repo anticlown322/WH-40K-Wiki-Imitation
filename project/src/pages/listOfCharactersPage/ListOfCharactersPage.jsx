@@ -11,6 +11,7 @@ const maxArr = data.characters;
 let arr = [...maxArr];
 function changeArr(props){
     arr = [...props];
+    console.log(arr);
 }
 
 const ListOfCharactersPage = () => {
