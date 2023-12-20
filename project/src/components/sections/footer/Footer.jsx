@@ -2,6 +2,7 @@ import {Box, Grid, Link, Typography} from "@mui/material";
 import Container from "@mui/material/Container";
 import "../../UI/footerGrid/FooterGrid.jsx"
 import Multigridfooter from "../../UI/footerGrid/FooterGrid.jsx";
+import {useTranslation} from 'react-i18next';
 
 class arrElem{
     name;
@@ -12,30 +13,6 @@ class arrElem{
     }
 }
 
-const linksContacts = [
-    new arrElem('Наш VK','https://vk.com/id40558425'),
-    new arrElem('Пожертвования','https://u.9111s.ru/uploads/202204/09/90c5605fc5ac4592b6a6eab6708f91bb.jpg'),
-    new arrElem('Наш GitHub','https://github.com/anticlown322/WH-40K-Wiki-Imitation'),
-]
-
-const linksSources = [
-    new arrElem('Fandom','https://www.fandom.com/explore-ru?uselang=ru'),
-    new arrElem('Muthead','https://www.muthead.com/'),
-    new arrElem('Fanatical','https://www.fanatical.com/'),
-]
-
-
-const linksReview = [
-    new arrElem('Что такое фэндом?','https://www.fandom.com/what-is-fandom'),
-    new arrElem('Условия использования','https://www.fandom.com/ru/terms-of-use-ru'),
-    new arrElem('О нас','ВСТАВЬ СЮДА'),
-]
-
-const linksCommunity = [
-    new arrElem('Вики сообщества','https://community.fandom.com/ru/'),
-    new arrElem('Поддержка','https://fandom.zendesk.com/hc/ru'),
-    new arrElem('Справка','https://community.fandom.com/ru/wiki/Справка:Содержание'),
-]
 
 function Copyright() {
     return (
@@ -51,6 +28,33 @@ function Copyright() {
 }
 
 export const Footer = () => {
+    const {t, i18n} = useTranslation();
+
+    const linksContacts = [
+        new arrElem(t('footer.contactUsLinks.vk'),'https://vk.com/id40558425'),
+        new arrElem(t('footer.contactUsLinks.donations'),'https://u.9111s.ru/uploads/202204/09/90c5605fc5ac4592b6a6eab6708f91bb.jpg'),
+        new arrElem(t('footer.contactUsLinks.gh'),'https://github.com/anticlown322/WH-40K-Wiki-Imitation'),
+    ]
+
+    const linksSources = [
+        new arrElem('Fandom','https://www.fandom.com/explore-ru?uselang=ru'),
+        new arrElem('Muthead','https://www.muthead.com/'),
+        new arrElem('Fanatical','https://www.fanatical.com/'),
+    ]
+
+
+    const linksOverview = [
+        new arrElem(t('footer.overviewLinks.fandom'),'https://www.fandom.com/what-is-fandom'),
+        new arrElem(t('footer.overviewLinks.terms'),'https://www.fandom.com/ru/terms-of-use-ru'),
+        new arrElem(t('footer.overviewLinks.aboutUs'),'https://github.com/anticlown322/WH-40K-Wiki-Imitation'),
+    ]
+
+    const linksCommunity = [
+        new arrElem(t('footer.communityLinks.wiki'),'https://community.fandom.com/ru/'),
+        new arrElem(t('footer.communityLinks.support'),'https://fandom.zendesk.com/hc/ru'),
+        new arrElem(t('footer.communityLinks.help'),'https://community.fandom.com/ru/wiki/Справка:Содержание'),
+    ]
+
     return (
         <Box
             component="footer"
@@ -74,10 +78,10 @@ export const Footer = () => {
                           backgroundColor: '#c62828',
                           borderRadius: 5,
                       }}>
-                    {Multigridfooter('СВЯЗЬ С НАМИ', linksContacts)}
-                    {Multigridfooter('ИСТОЧНИКИ', linksSources)}
-                    {Multigridfooter('ОБЗОР', linksReview)}
-                    {Multigridfooter('СООБЩЕСТВО', linksCommunity)}
+                    {Multigridfooter(t('footer.contactUs'), linksContacts)}
+                    {Multigridfooter(t('footer.sources'), linksSources)}
+                    {Multigridfooter(t('footer.overview'), linksOverview)}
+                    {Multigridfooter(t('footer.community'), linksCommunity)}
                 </Grid>
                 <Copyright></Copyright>
             </Container>

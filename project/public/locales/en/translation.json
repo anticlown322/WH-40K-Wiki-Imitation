@@ -1,7 +1,41 @@
 {
-  "registration": "Registration",
-  "description": {
-    "part1": "To get started, edit <1>src/App.js</1> and save to reload.",
-    "part2": "Switch language between english and german using buttons above."
+  "header": {
+    "home": "Home",
+    "aboutUs": "About Us",
+    "charOfTheDay": "Character of the day",
+    "characters": "All characters",
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "language": "Language"
+  },
+  "footer": {
+    "contactUs": "Contact Us",
+    "contactUsLinks": {
+      "vk": "VK",
+      "donations": "Donations",
+      "gh": "GitHub"
+    },
+    "sources": "Sources",
+    "overview": "Overview",
+    "overviewLinks": {
+      "fandom": "What is Fandom?",
+      "terms": "Terms of use",
+      "aboutUs": "About Us"
+    },
+    "community": "Community",
+    "communityLinks": {
+      "wiki": "Community Wiki",
+      "support": "Contact support",
+      "help": "Help"
+    }
+  },
+  "homePage": {
+
+  },
+  "charList": {
+
+  },
+  "charPage": {
+
   }
 }
