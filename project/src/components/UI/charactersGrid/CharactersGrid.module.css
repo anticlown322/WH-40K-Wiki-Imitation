@@ -1,8 +1,16 @@
-.outerBox {
+.outerContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: rgba(139, 0, 0, 0.7);
     margin-top: 1rem;
     padding: 30px;
+    border-radius: 30px;
+}
+
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url(https://vignette.wikia.nocookie.net/warhammer40k/images/f/ff/Fon-tzeentch.png/revision/latest?cb=20190713121552&format=original&path-prefix=ru);
 }
