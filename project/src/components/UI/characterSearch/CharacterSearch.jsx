@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import {useMemo, useState} from 'react';
 import data from "../../../assets/docs/all-characters.json";
 import {Typography, Box} from "@mui/material";
 import Container from "@mui/material/Container";
@@ -6,7 +6,18 @@ import classes from "./CharactersSearch.module.css";
 
 const CharacterSearch = (props) => {
     let charactersArr = [];
-    const [value, setValue] = useState('')
+    let [value, setValue] = useState('');
+
+
+    const sortedArray = useMemo(() =>{
+        charactersArr = []
+        data.characters.forEach(obj => {
+            if (obj.name.toLowerCase().includes(value.toLowerCase()))
+                charactersArr.push(obj);
+        })
+        props(charactersArr);
+        return charactersArr
+    } , [value])
 
 
     return (
@@ -16,15 +27,10 @@ const CharacterSearch = (props) => {
                     <Typography variant="h3" color="white" fontWeight="bold">Поиск по имени</Typography>
                     <input className={classes.searchInput}
                         value={value}
-                        onChange={event => {
-                            charactersArr = []
-                            data.characters.forEach(obj => {
-                                if (obj.name.toLowerCase().includes(value.toLowerCase()))
-                                    charactersArr.push(obj);
-                                props(charactersArr);
-                                setValue(event.target.value);
-                            })}
-                        }
+                        onChangeCapture={event => {
+                            setValue(event.target.value);
+                            sortedArray;
+                        }}
                     />
                 </Box>
             </Box>

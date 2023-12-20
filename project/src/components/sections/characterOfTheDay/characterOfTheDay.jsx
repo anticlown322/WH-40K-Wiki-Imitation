@@ -3,7 +3,8 @@ import classes from './characterOfTheDay.module.css';
 import MyCard from '../../UI/myCard/MyCard.jsx'
 import data from  '../../../assets/docs/all-characters.json'
 
-const charId = Math.ceil(Math.random() * 100) % 7;
+const charId = Math.ceil(Math.random() * 100) % 6 +1;
+data.characterOfTheDay = charId;
 const char = data.characters[charId];
 const href = charId;
 

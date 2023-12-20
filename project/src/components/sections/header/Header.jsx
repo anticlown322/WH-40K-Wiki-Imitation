@@ -14,11 +14,12 @@ import classes from './Header.module.css';
 import {redirect} from "react-router-dom";
 import {Link} from "@mui/material";
 import { useTranslation } from 'react-i18next';
+import data from "../../../assets/docs/all-characters.json"
 
 const pages = [
         {name : 'Главная', href : '/'},
     {name : 'О нас', href : 'https://github.com/anticlown322/WH-40K-Wiki-Imitation'},
-    {name : 'Деятель дня', href : '/'},
+    {name : 'Деятель дня', href : data.characterOfTheDay},
     {name : 'Персонажи', href : '/characters'}];
 const pagesLinks = ['', '#devs', '#charOfTheDay', 'characters'];
 const settings = ['Профиль', 'Аккаунт', 'Настройки', 'Выйти'];
