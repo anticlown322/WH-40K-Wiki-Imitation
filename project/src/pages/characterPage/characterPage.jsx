@@ -27,6 +27,7 @@ const CharacterPage = () => {
                                 <Typography variant="h5" color="white">Раса: {char.race}</Typography>
                                 <Typography variant="h5" color="white">Фракция: {char.fraction}</Typography>
                                 <Typography variant="h5" color="white">Принадлежность: {char.belonging}</Typography>
+                                <Typography variant="h5" color="white">Дата рождения/возрождения: {char.dateOfBirth}</Typography>
                                 <Typography variant="h5" color="white">Текущий статус: {char.status}</Typography>
                                 <Typography variant="h5" color="white">Последнее место появления: [{char.coordinates}]</Typography>
                                 <Link href="https://jambonium.co.uk/40kmap/#" underline="hover" sx={{color:'orange'}}>
