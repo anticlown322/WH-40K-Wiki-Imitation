@@ -6,8 +6,6 @@ import ImageCarousel from "/src/components/UI/mySwiper/MySwiper.jsx";
 
 const char = data.characters[document.URL[document.URL.length - 1]];
 const CharacterPage = () => {
-    console.log(char.pathToVideo)
-
     return (
         <Container maxWidth='xl'>
             <Box sx={{display:'flex', flexDirection:'column', alignItems:'center'}}>
@@ -59,7 +57,7 @@ const CharacterPage = () => {
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen></iframe>
                 </Box>
-                <ImageCarousel></ImageCarousel>
+                {ImageCarousel(char)}
             </Box>
         </Container>
     );
