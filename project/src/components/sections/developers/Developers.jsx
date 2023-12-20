@@ -26,7 +26,7 @@ const Developers = () => {
                                 sx={{backgroundColor: 'primary.dark', width: 96, height: 96, borderRadius: 4, transition: '0.5s', '&:hover': {transform: 'scale(1.2)'}}}/>
                         <Typography variant="h6" color="white" margin={1}>Семен Рычихин</Typography>
                         <Typography color="white">Работяга</Typography>
-                        <Link href="https://github.com/AndreyItMe" underline="none" target="_blank" color="lightBlue"
+                        <Link href="https://github.com/BeerManNotAvailable1 " underline="none" target="_blank" color="lightBlue"
                               sx={{transition: '0.3s', '&:hover': {color: 'lightGreen'}}}>Профиль на GitHub</Link>
                     </Box>
                     <Box className={classes.devBox}>
@@ -34,7 +34,7 @@ const Developers = () => {
                                 sx={{backgroundColor: 'primary.dark', width: 96, height: 96, borderRadius: 4, transition: '0.5s', '&:hover': {transform: 'scale(1.2)'}}}/>
                         <Typography variant="h6" color="white" margin={1}>Андрей Иванов</Typography>
                         <Typography color="white">Работяга</Typography>
-                        <Link href="https://github.com/BeerManNotAvailable1" underline="none" target="_blank" color="lightBlue"
+                        <Link href="https://github.com/AndreyItMe" underline="none" target="_blank" color="lightBlue"
                               sx={{transition: '0.3s', '&:hover': {color: 'lightGreen'}}}>Профиль на GitHub</Link>
                     </Box>
                 </Stack>

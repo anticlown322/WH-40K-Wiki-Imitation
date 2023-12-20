@@ -25,7 +25,8 @@ const CharacterSearch = (props) => {
             <Box className={classes.outerBox}>
                 <Box className={classes.innerBox}>
                     <Typography variant="h3" color="white" fontWeight="bold">Поиск по имени</Typography>
-                    <input className={classes.searchInput}
+                    <input
+                        className={classes.searchInput}
                         value={value}
                         onChangeCapture={event => {
                             setValue(event.target.value);

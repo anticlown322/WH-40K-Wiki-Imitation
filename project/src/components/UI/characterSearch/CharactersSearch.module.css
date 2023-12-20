@@ -19,5 +19,7 @@
 
 .searchInput {
     width: 100%;
-    max-width: 200px;
+    max-width: 300px;
+    font-size: 30px;
+    margin: 10px;
 }
